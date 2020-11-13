@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCLES</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/songs.css" media="all">
+</head>
+<body>
+<h1 class="blind">Menu</h1>
+<b id="btn-menu" class="btn-menu"><span></span></b>
+<div id="side-menu" class="side-menu">
+    <ul>
+        <li><a href="index.html"><span>MAIN</span></a></li>
+        <li><a href="about.html"><span>ABOUT</span></a></li>
+        <li><a href="album.html"><span>ALBUMS</span></a></li>
+        <li><a href="video.html"><span>VIDEOS</span></a></li>
+        <li><a href="songs.html"><span>[CIRCLES]</span></a></li>
+    </ul>
+    <b id="btn-close" class="btn-close"><span></span></b>
+</div>
+
+<section class="songs">
+    <div class="circles">
+        <video id="video"  autoplay preload="auto" loop="loop" muted>
+            <source src="./gif/circles.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <p id="album">[ Circles ]</p> 
+            <p id="ab-title">자신의 모든 것을 바쳐 만든, &nbsp;Mac Miller가 남긴 마지막 사후 앨범.</p>
+            <p id="ab-text">Mac Miller의 여섯 번째이자 마지막 스튜디오 앨범이다. <br/>
+            전작 [Swimming]과 한 쌍을 이루는[Circles]는 <br/>[Swimming]의 수록곡 절반 이상을 작곡한 프로듀서 Jon Brion의 노력 덕에 완성되었다.<br/> 
+            Jon Brion은 Mac Miller와 보냈던 시간과 대화를 바탕으로 앨범을 작업했음을 밝혔는데,<br/> 작품은 전반적으로 Mac Miller를 래퍼보다는 
+            싱어송라이터로 기억하게 만드는 구심점 역할을 한다.<br/> [Circles]는 섬세한 락 드럼, 로우 파이 피아노, 나른한 기타와 <br/>Mac Miller의 
+            애처로운 목소리를 전면에 내세우며 음악적 여정을 그려냈다. <br/>주요 트랙 ‘Circles’, ‘Good News’, ‘Hand Me Downs’, ‘Surf’ 뿐만 아니라 
+            <br/>전곡이 Mac Miller와 함께 꿈꾸고 비틀거리며 자아를 횡단한다.<br/> 짧은 생애에서 이룬 구슬프고 온화한 기록.</p>
+        </div>
+    </div>
+    <div class="tracklist">
+        <ul>
+            <li><img src="./img/album/album1.png" width="400px" height="400px"/></li>
+            <li>
+                <p id="tl">Track List</p>
+                <p id="tt">01. Circles (title)<br/> 02. Complicated <br/>03. Blue World<br/>04. Good News (title) <br/>05. I Can See<br/>06. Everybody 
+                    <br/>07. Woods <br/>08. Hand Me Downs (title) <br/>09. That's On Me<br/>10. Hands <br/>11. Surf (title) <br/>12. Once a day
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div id="gallery" class="gallery">
+        <div class="view">
+            <div class="view-container">
+                <div class="view-item"><img src="./img/lp.png" ></div>
+                <div class="view-item"><img src="./img/cd.png"></div>
+                <div class="view-item"><img src="./img/tshirt.png"></div>
+                <div class="view-item"><img src="./img/ballcap.png"></div>
+            </div>
+        </div>
+        <div class="paddle-nav">
+            <ul>
+                <li><button class="arrow prev"></button></li>
+                <li><button class="arrow next"></button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="shop">
+        <p>CIRCLES<br/>
+            <span>BY</span><br/>
+            MAC<br/>
+            MILLER
+        </p>
+        <div class="button">
+        <a href="https://shop.macmillerswebsite.com/" target="blank">SHOP NOW</a></div>
+    </div>
+</section>
+
+<div id="cursor-dot">&nbsp;</div>
+<div id="cursor-bg">&nbsp;</div>
+<div id="progress"><span>&nbsp;</span></div>
+
+<script type="text/javascript" src="./vendor/gsap/gsap.min.js"></script>
+<script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/songs.js"></script>
+</body>
+</html>

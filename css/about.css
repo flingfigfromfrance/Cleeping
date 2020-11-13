@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+html{overflow: visible;}
+.about{
+    background-color: #000;
+    color: white;
+}
+.about-name{
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+}
+#about{
+    font-family: 'Prata', serif;
+    font-size: 50px;
+    padding-top: 200px;
+    padding-left: 40px;
+}
+#name {
+    font-family: 'Prata', serif;
+    font-size: 100px;
+    padding-top: 200px;
+    width: 600px;
+}
+svg {
+    letter-spacing: 0.15em;
+    width: 100%;
+    height: 100%;
+  }
+  
+svg text {
+    fill: #fff;
+    stroke: #fff;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dasharray: 100% 0;
+    animation: stroke-offset 3s ease-out infinite; /* 텍스트 채워지는 애니메이션*/
+    font-size: 5em;
+}
+  
+@keyframes stroke-offset {
+    0% {
+      fill-opacity: 0;
+      stroke-width: 0;
+      stroke-dasharray: 0% 100%;
+    }
+    25% {
+      stroke-width: 3px;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    75% {
+      stroke-width: 3px;
+    }
+    100% {
+      stroke-width: 0;
+    }
+}
+.about-backimg{
+    position: relative;
+    width: 100%;
+    background-image: url('../img/about-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+}
+.about-backimg ul li{
+    float: left;
+    list-style: none;
+}
+.block{height: 10vh;}
+.about-backimg2{
+    position: relative;
+    width: 100%;
+    background-image: url('../img/about-img2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+}
+.about-backimg2 ul li{
+    float: left;
+    list-style: none;
+}
+#box-l{
+    height: 70vh;
+    width: 120px;
+    background-color: #000;
+    left: 0;
+}
+#box-r{
+    height: 70vh;
+    width: 200px;
+    background-color: #000;
+    right: 0;
+    position: absolute;
+}
+#box-l2{
+    height: 70vh;
+    width: 300px;
+    background-color: #000;
+    left: 0;
+}
+#box-r2{
+    height: 70vh;
+    width: 80px;
+    background-color: #000;
+    right: 0;
+    position: absolute;
+}
+.about-profile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.profile-text{
+    padding-right: 100px;
+    padding-top: 400px;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.profile-text li{
+    list-style: none;
+}
+.profile-text li span{
+    letter-spacing: 0.17em;
+}
+.slide{width:500px;height: 600px; overflow: hidden;}
+.profile-img{
+    width: calc(100%*4);
+    display: flex; /* 가로로 나열 */
+    animation:slide 8s infinite; /* 8초동안 진행하고 무한반복 */
+}
+.profile-img li{width: calc(100%/4);list-style:none;height: 600px;} /* 100%를 4로 나눠서 25%간격 만큼씩 진행 */
+.profile-img li:nth-child(1){background: url(../img/about-profile.png); background-size: cover;}
+.profile-img li:nth-child(2){background:url(../img/about-profile2.png); background-size: cover;}
+.profile-img li:nth-child(3){background: url(../img/about-profile3.png);background-size: cover;}
+.profile-img li:nth-child(4){background: url(../img/about-profile4.png);background-size: cover;}
+@keyframes slide {
+    0% {margin-left:0;} /* 0 ~ 10 : 정지 */
+    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+    25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+    35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+    50% {margin-left:-200%;} 
+    75% {margin-left:-300%;}
+    85% {margin-left:-300%;} 
+    100% {margin-left:0;}
+    }
+.about-lyric{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#lyric{
+    position: absolute;
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    right: 40px;
+    margin-top: 20px;
+    animation: marquee1 linear 15s infinite; /* 텍스트 흘러가는 애니메이션 */
+}
+@keyframes marquee1 {
+    from {
+      transform: translate(100%);
+    }
+    99%,
+    to {
+      transform: translate(-100%);
+    }
+}
+#lyric:hover{
+    animation-play-state: paused; /* 마우스 호버시 멈춤 */
+}
+.footer{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    font-size: 17px;
+}
+.sns{
+    padding-top: 50px;
+    display:flex;
+    justify-content: center;
+
+}
+.sns > div {
+    display:flex;
+}
+.sns li{
+    list-style: none;
+    padding: 0 20px;
+
+}
+.sns li > a > img{
+    transition :all 0.6s ease;
+}
+.sns li > a >img:hover{
+    filter:brightness(50%); /* 마우스 호버시 눌린듯한 효과 */
+}
+.sns li:nth-child(3){
+    padding-top: 5px;
+}
+.sns li:nth-child(4){
+    padding-top: 3px;
+}
+.sns li:last-child{
+    padding: 9px;
+}

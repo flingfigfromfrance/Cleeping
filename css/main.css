@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* MAIN */
+.main-img{
+   background-image: url(../gif/main-back.gif);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100%;
+}
+.main-text{
+    color: white;
+    font-family: 'Cantata One', serif;
+    font-size: 50px;
+    padding-top: 150px;
+    text-align: center;
+}
+.main-text h1{
+    font-family: 'Kanit', sans-serif;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    letter-spacing: 1.7em;
+    animation: letterspacing 2s infinite alternate cubic-bezier(.2, 0, 0, 1);
+    
+}
+  
+  @keyframes letterspacing {
+    0% {
+      letter-spacing: -5rem;
+    }
+    
+    50% {
+        letter-spacing: 2rem;
+    }
+    
+    100% {
+      letter-spacing: 2rem;
+   
+    }
+  }
+/* SNS */
+.sns{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.sns li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.sns li > a > img{
+    transition :all 0.6s ease;
+}
+.sns li > a >img:hover{
+    filter:brightness(50%);
+}
